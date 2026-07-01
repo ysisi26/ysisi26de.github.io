@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="¿Y si sí? Drop 01 - México 26. Streetwear futbolero mexicano creado en Berlín."
+    />
+    <title>¿Y si sí? | Drop 01 - México 26</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="announcement" data-announcement></div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="¿Y si sí? inicio">¿Y si sí?</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#drop">Colección</a>
+          <a href="#catalogo" data-nav-category="playeras">Playeras</a>
+          <a href="#catalogo" data-nav-category="hoodies">Hoodies y chamarras</a>
+          <a href="#catalogo" data-nav-category="accesorios">Accesorios</a>
+          <a href="#historia">Nuestra historia</a>
+          <a href="#preguntas">Preguntas</a>
+        </div>
+        <div class="nav-actions">
+          <select class="language" aria-label="Idioma">
+            <option>ES</option>
+            <option>DE</option>
+            <option>EN</option>
+          </select>
+          <button class="cart-link" type="button" data-open-cart>
+            Carrito <span data-cart-count>0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Chamarra Águila 26 con gráfico mexicano de futbol"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">DROP 01 - MÉXICO 26</p>
+          <h1 id="hero-title">¿Y si sí?</h1>
+          <p class="hero-subtitle">Fútbol mexicano para llevar puesto.</p>
+          <p>
+            Una colección de streetwear creada en Berlín para quienes viven cada partido
+            con esperanza, nervios, orgullo y corazón mexicano.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#drop">Ver el drop</a>
+            <a class="btn secondary" href="#catalogo">Hacer mi pedido</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="drop-intro section-band" id="drop">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Preventa abierta</p>
+            <h2>DROP 01 - MÉXICO 26</h2>
+          </div>
+          <p>
+            Una cápsula inspirada en la cultura del fútbol mexicano, reinterpretada desde
+            Berlín. Águilas, nopales, canchas y el número 26 se convierten en gráficos retro
+            diseñados para usarse mucho después del último silbatazo.
+          </p>
+        </div>
+      </section>
+
+      <section class="campaign section-inner" id="ya-fue-si" aria-labelledby="campaign-title">
+        <div class="campaign-lede">
+          <p class="eyebrow" data-campaign-eyebrow>Campaña</p>
+          <h2 id="campaign-title" data-campaign-title>¿Y si sí? Ya fue sí.</h2>
+          <p data-campaign-copy>
+            El marcador termina. La historia no. Tres playeras para guardar el Mundial que
+            nos hizo volver a creer.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#catalogo" data-campaign-cta>Reserva la tuya</a>
+            <a class="btn secondary" href="#manifiesto" data-campaign-secondary>Lleva puesta la historia</a>
+          </div>
+        </div>
+        <div class="campaign-scoreboard" aria-label="Mensajes de campaña">
+          <span data-campaign-stat-one>9 de 9</span>
+          <span data-campaign-stat-two>40 años</span>
+          <span data-campaign-stat-three>Ya fue sí</span>
+        </div>
+        <div class="manifesto" id="manifiesto">
+          <h3 data-manifesto-title>El marcador podrá cambiar el camino. No puede borrar la historia.</h3>
+          <p data-manifesto-copy>
+            No estamos vendiendo una predicción. Estamos guardando un recuerdo: la forma en
+            que una comunidad volvió a creer junta.
+          </p>
+        </div>
+      </section>
+
+      <section class="catalog section-inner" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">La alineación completa</p>
+            <h2 id="catalog-title">Colección</h2>
+          </div>
+          <div class="filters" aria-label="Filtros de catálogo">
+            <label>
+              <span>Buscar</span>
+              <input type="search" placeholder="Playera, gorra, águila..." data-search />
+            </label>
+            <label>
+              <span>Categoría</span>
+              <select data-category>
+                <option value="all">Todo</option>
+                <option value="playeras">Playeras</option>
+                <option value="hoodies">Hoodies y chamarras</option>
+                <option value="accesorios">Accesorios</option>
+              </select>
+            </label>
+            <label>
+              <span>Talla</span>
+              <select data-size-filter>
+                <option value="all">Todas</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="preorder section-band" id="preventa">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Cómo funciona la preventa</p>
+              <h2>Tú la pides. Nosotros la hacemos.</h2>
+            </div>
+            <p>
+              Producimos en cantidades limitadas para evitar sobreinventario y fabricar
+              únicamente las prendas que realmente quiere la comunidad.
+            </p>
+          </div>
+          <div class="timeline" data-preorder-dates></div>
+          <div class="steps">
+            <article>
+              <span>1</span>
+              <h3>Elige tu pieza</h3>
+              <p>Selecciona diseño, talla y cantidad.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Confirma tu pedido</h3>
+              <p>Paga de forma segura y recibe confirmación por correo.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Producimos el drop</h3>
+              <p>Al cerrar la preventa enviamos todas las piezas a producción.</p>
+            </article>
+            <article>
+              <span>4</span>
+              <h3>Recibe tu pedido</h3>
+              <p>Te avisamos cuando esté listo para envío o recogida en Berlín/Potsdam.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section-inner" id="historia">
+        <div class="story-copy">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Una pregunta que nunca dejamos de hacernos</h2>
+          <p>
+            ¿Y si sí? nació entre México y Berlín, pensando en esa mezcla de esperanza,
+            nervios y emoción que aparece cada vez que juega nuestra selección.
+          </p>
+          <p>
+            Queríamos crear algo que no pareciera mercancía oficial ni souvenir turístico.
+            Una colección que hablara de fútbol mexicano desde el diseño, la moda y la
+            identidad.
+          </p>
+          <p>
+            Cada pieza está pensada para quienes cantan desde lejos, organizan partidos en
+            otra ciudad, celebran sus raíces y siguen creyendo hasta el último minuto.
+          </p>
+          <strong>No sabemos cómo terminará el partido. Pero sabemos cómo queremos vivirlo.</strong>
+        </div>
+        <div class="story-image">
+          <img src="assets/products/tote-canvas-aguila-26.png" alt="Tote canvas Águila 26 de la colección" />
+        </div>
+      </section>
+
+      <section class="community section-band">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Comunidad</p>
+              <h2>De México para la cancha de Berlín</h2>
+            </div>
+            <a class="btn secondary" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              Etiquétanos en tu look
+            </a>
+          </div>
+          <div class="community-strip">
+            <img src="assets/products/gorra-bordada.png" alt="Gorra bordada ¿Y si sí? crema con visera verde" />
+            <img src="assets/products/jersey-retro-mexico-26.png" alt="Jersey retro México 26 con cuello verde" />
+            <img src="assets/products/crewneck-minimal-26.png" alt="Crewneck Minimal 26 color crema" />
+          </div>
+          <p class="hashtag">#YSiSí26</p>
+        </div>
+      </section>
+
+      <section class="faq section-inner" id="preguntas">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Preguntas frecuentes</p>
+            <h2>Antes del silbatazo</h2>
+          </div>
+        </div>
+        <div class="faq-list" data-faq></div>
+      </section>
+
+      <section class="newsletter">
+        <div class="section-inner newsletter-inner">
+          <div>
+            <p class="eyebrow">Newsletter</p>
+            <h2>Nos vemos en la cancha.</h2>
+          </div>
+          <form data-newsletter>
+            <label class="sr-only" for="newsletter-email">Correo electrónico</label>
+            <input id="newsletter-email" type="email" placeholder="tu@email.com" required />
+            <button class="btn primary" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-inner footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#inicio">¿Y si sí?</a>
+          <p>Creado entre México y Berlín. Hecho para quienes todavía creen.</p>
+        </div>
+        <div>
+          <h2>Drop</h2>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#preventa">Preventa</a>
+          <a href="#historia">Historia</a>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <a href="mailto:hola@ysisi26.com">hola@ysisi26.com</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="#">Envíos</a>
+          <a href="#">Cambios y devoluciones</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Aviso legal Alemania</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true" data-cart-drawer>
+      <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="cart-header">
+          <h2 id="cart-title">Carrito</h2>
+          <button class="icon-button" type="button" aria-label="Cerrar carrito" data-close-cart>×</button>
+        </div>
+        <div class="cart-items" data-cart-items></div>
+        <p class="cart-note">
+          Los productos de preventa y los disponibles inmediatamente pueden enviarse juntos
+          cuando todo el pedido esté listo.
+        </p>
+        <div class="cart-totals" data-cart-totals></div>
+        <button class="btn primary full" type="button" data-open-checkout>Finalizar pedido</button>
+      </div>
+    </aside>
+
+    <dialog class="product-dialog" data-product-dialog>
+      <button class="icon-button dialog-close" type="button" aria-label="Cerrar producto" data-close-product>×</button>
+      <div class="product-detail" data-product-detail></div>
+    </dialog>
+
+    <dialog class="size-dialog" data-size-dialog>
+      <button class="icon-button dialog-close" type="button" aria-label="Cerrar guía" data-close-size>×</button>
+      <h2>Guía de tallas</h2>
+      <p>
+        Esta prenda tiene corte oversized. Elige tu talla habitual para un ajuste amplio o una
+        talla menos para un ajuste más clásico.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Talla</th>
+              <th>Pecho</th>
+              <th>Largo</th>
+              <th>Manga</th>
+            </tr>
+          </thead>
+          <tbody data-size-table></tbody>
+        </table>
+      </div>
+    </dialog>
+
+    <dialog class="checkout-dialog" data-checkout-dialog>
+      <button class="icon-button dialog-close" type="button" aria-label="Cerrar checkout" data-close-checkout>×</button>
+      <form class="checkout-form" data-checkout-form>
+        <div>
+          <p class="eyebrow">Checkout</p>
+          <h2>Finalizar pedido</h2>
+        </div>
+        <div class="form-grid">
+          <label>Nombre completo<input required name="name" autocomplete="name" /></label>
+          <label>Correo electrónico<input required type="email" name="email" autocomplete="email" /></label>
+          <label>Teléfono opcional<input name="phone" autocomplete="tel" /></label>
+          <label>Dirección<input required name="address" autocomplete="street-address" /></label>
+          <label>Ciudad<input required name="city" autocomplete="address-level2" /></label>
+          <label>Código postal<input required name="postal" autocomplete="postal-code" /></label>
+          <label>País<input required name="country" autocomplete="country-name" value="Alemania" /></label>
+          <label>
+            Método de entrega
+            <select name="delivery">
+              <option>Envío dentro de Alemania</option>
+              <option>Envío internacional</option>
+              <option>Recogida en Berlín/Potsdam</option>
+              <option>Entrega en evento o watch party</option>
+            </select>
+          </label>
+          <label>
+            Método de pago
+            <select name="payment">
+              <option>Tarjeta</option>
+              <option>PayPal</option>
+              <option>Transferencia bancaria</option>
+            </select>
+          </label>
+          <label class="wide">Código de descuento<input name="coupon" placeholder="MEX26" /></label>
+          <label class="wide">Comentarios<textarea name="notes" rows="3"></textarea></label>
+        </div>
+        <div class="checkout-summary" data-checkout-summary></div>
+        <button class="btn primary full" type="submit">Confirmar pedido</button>
+        <p class="success-message" data-order-success hidden>
+          ¡Tu pedido ya está en la cancha! Recibirás por correo todos los detalles y te
+          avisaremos cuando entre en producción.
+        </p>
+      </form>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
